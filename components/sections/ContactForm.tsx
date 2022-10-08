@@ -65,11 +65,13 @@ export default function ContactForm() {
                         Email Address
                       </label>
                       <input
-                        type="text"
+                        type="email"
                         name="email-address"
                         id="email-address"
                         autoComplete="email"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm"
+                        placeholder="you@example.com"
+                        defaultValue={""}
                       />
                     </div>
 
@@ -90,19 +92,17 @@ export default function ContactForm() {
                     </div>
                     <div className="col-span-6">
                       <label
-                        htmlFor="about"
+                        htmlFor="message"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Message
                       </label>
                       <div className="mt-1">
                         <textarea
-                          id="about"
-                          name="about"
+                          id="message"
+                          name="message"
                           rows={3}
                           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm"
-                          placeholder="you@example.com"
-                          defaultValue={""}
                         />
                       </div>
                       <p className="mt-2 sm:text-lg text-base text-gray-500">
