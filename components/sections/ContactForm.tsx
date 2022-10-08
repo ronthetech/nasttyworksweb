@@ -38,6 +38,7 @@ export default function ContactForm() {
                         id="first-name"
                         autoComplete="given-name"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm"
+                        required
                       />
                     </div>
 
@@ -103,6 +104,8 @@ export default function ContactForm() {
                           name="message"
                           rows={3}
                           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm"
+                          required
+                          minLength={5}
                         />
                       </div>
                       <p className="mt-2 sm:text-lg text-base text-gray-500">
