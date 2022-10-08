@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import ServicesBox from "../components/sections/Services";
+import ServiceList from "../components/sections/ServiceList";
 
 const Services: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const Services: NextPage = () => {
       </Head>
 
       <div>
-        <ServicesBox />
+        <ServiceList />
       </div>
     </div>
   );
