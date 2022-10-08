@@ -87,18 +87,18 @@ export default function ServiceList() {
         <div className="lg:text-center">
           <h2
             id="header-title"
-            className="text-5xl font-semibold text-emerald-700"
+            className="text-5xl font-semibold text-teal-700"
           >
             Services
           </h2>
-          <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl">
+          <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-teal-900 sm:text-5xl">
             A few of the services we offer
           </p>
           <p className="mt-4 max-w-2xl text-xl lg:text-2xl text-gray-500 lg:mx-auto">
             Don&#39;t worry if your issue isn&#39;t listed below! Just reach out
             to us on our{" "}
             <Link href="/contact">
-              <a className="text-gray-900 hover:bg-gray-700 hover:text-white px-1 py-0 rounded-md ">
+              <a className="text-gray-900 hover:bg-teal-600 hover:text-white px-1 py-0 rounded-md ">
                 Contact Page
               </a>
             </Link>{" "}
