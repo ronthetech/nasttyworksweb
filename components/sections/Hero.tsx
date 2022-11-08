@@ -13,11 +13,17 @@ export default function Hero() {
                   Mechanic
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 mb-4">
                 Making house calls all over the New York. We come to you,
                 whether you are stuck on the side of the road or in your
                 driveway at home. 7 days a week.
               </p>
+              <a
+                className="flex w-full items-center justify-center rounded-md border border-transparent bg-teal-600 px-8 py-3 text-lg font-medium text-white hover:bg-teal-700 md:py-4 md:px-10 md:text-xl"
+                href="tel:718-517-1473"
+              >
+                You can reach us at 718-517-1473
+              </a>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <Link href="/contact">
