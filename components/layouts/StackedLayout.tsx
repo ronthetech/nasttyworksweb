@@ -54,8 +54,7 @@ export default function StackedLayout({ children }: PrimaryLayoutProps) {
                             )}
                             aria-current={
                               router.pathname == item.href ? "page" : undefined
-                            }
-                          >
+                            }>
                             {item.name.toUpperCase()}
                           </a>
                         ))}
@@ -99,8 +98,7 @@ export default function StackedLayout({ children }: PrimaryLayoutProps) {
                       )}
                       aria-current={
                         router.pathname == item.href ? "page" : undefined
-                      }
-                    >
+                      }>
                       {item.name}
                     </Disclosure.Button>
                   ))}
@@ -114,9 +112,8 @@ export default function StackedLayout({ children }: PrimaryLayoutProps) {
           <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
             <h1
               id="header-title"
-              className="text-5xl lg:text-7xl font-bold tracking-tight text-center text-teal-600"
-            >
-              Nastty Works
+              className="text-5xl lg:text-7xl font-bold tracking-tight text-center text-teal-600">
+              Nastty Works Auto
             </h1>
           </div>
         </header>
