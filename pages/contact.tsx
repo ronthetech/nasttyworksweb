@@ -6,7 +6,7 @@ const Contact: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Nastty Works Contact</title>
+        <title>Nastty Works Auto Contact</title>
         <meta name="description" content="Nastty Works Contact" />
       </Head>
 
