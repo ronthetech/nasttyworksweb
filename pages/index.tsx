@@ -6,10 +6,9 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Nastty Works</title>
+        <title>Nastty Works Auto</title>
         <meta name="description" content="Nastty Works Home" />
       </Head>
-
       <Hero />
     </div>
   );
