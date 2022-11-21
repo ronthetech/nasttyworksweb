@@ -12,17 +12,15 @@ const Footer = (props: FooterProps) => {
             <a>
               <h1
                 id="header-title"
-                className="text-3xl lg:text-4xl font-bold tracking-tight text-center text-emerald-700 hover:text-emerald-800"
-              >
-                Nastty Works
+                className="text-3xl lg:text-4xl font-bold tracking-tight text-center text-emerald-700 hover:text-emerald-800">
+                Nastty Works Auto
               </h1>
             </a>
           </Link>
           <a
             href="https://www.instagram.com/nastty.ent/"
             rel="noreferrer noopener"
-            target="_blank"
-          >
+            target="_blank">
             <InstagramLogo className="text-5xl" />
           </a>
         </div>
