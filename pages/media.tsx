@@ -6,7 +6,7 @@ const Media: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Nastty Works Media</title>
+        <title>Nastty Works Auto Media</title>
         <meta name="description" content="Nastty Works Media" />
       </Head>
 
