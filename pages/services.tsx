@@ -6,7 +6,7 @@ const Services: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Nastty Works Services</title>
+        <title>Nastty Works Auto Services</title>
         <meta name="description" content="Nastty Works Services" />
       </Head>
 
