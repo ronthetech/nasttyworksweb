@@ -21,7 +21,7 @@ const Footer = (props: FooterProps) => {
             href="https://www.instagram.com/nastty.ent/"
             rel="noreferrer noopener"
             target="_blank">
-            <InstagramLogo className="text-5xl" />
+            <InstagramLogo className="text-3xl lg:text-5xl" />
           </a>
         </div>
       </div>
