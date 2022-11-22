@@ -15,7 +15,7 @@ const services = [
   {
     name: "Tie Rods",
     description:
-      "Stop steering wheel drift, uneven/unusual tire wear caused by worn tie rods.",
+      "Stop steering wheel drift, uneven or unusual tire wear caused by worn tie rods.",
   },
   {
     name: "Serpentine/Drive Belts",
