@@ -94,38 +94,38 @@ export default function ServiceList() {
             </h2>
             <WrenchCircleIcon className="text-6xl" />
           </div>
-          <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-teal-900 sm:text-5xl">
-            A few of the services we offer
-          </p>
-          <p className="mt-4 max-w-2xl text-xl lg:text-2xl text-gray-500 lg:mx-auto">
-            Don&#39;t worry if your issue isn&#39;t listed below! Just reach out
-            to us on our{" "}
-            <Link href="/contact">
-              <a className="text-gray-900 hover:bg-teal-600 hover:text-white px-1 py-0 rounded-md ">
-                Contact Page
-              </a>
-            </Link>{" "}
-            and let us know what your problem is!
+          <p className="mt-2 text-xl font-bold leading-8 tracking-tight text-teal-900 sm:text-4xl">
+            A few of the services we provide
           </p>
         </div>
-        <div className="mt-10">
+        <div className="mt-6">
           <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
             {services.map((service) => (
               <div
                 key={service.name}
                 className="relative bg-teal-100 shadow-md drop-shadow-md rounded-md p-2 border-teal-700 border-solid border">
                 <dt>
-                  <p className="ml-8 text-xl font-medium leading-6 text-gray-900">
+                  <p className="text-center text-xl font-medium leading-6 text-gray-900">
                     {service.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-8 text-lg text-gray-700">
+                <dd className="mt-2 ml-4 text-lg text-gray-700">
                   {service.description}
                 </dd>
               </div>
             ))}
           </dl>
         </div>
+        <p className="mt-2 max-w-2xl text-xl lg:text-2xl text-gray-500 lg:mx-auto">
+          Don&#39;t worry if your issue isn&#39;t listed above! Just reach out
+          to us on our{" "}
+          <Link href="/contact">
+            <a className="text-gray-900 hover:bg-teal-600 hover:text-white px-1 py-0 rounded-md ">
+              Contact Page{" "}
+            </a>
+          </Link>
+          and let us know what your problem is!
+        </p>
       </div>
     </div>
   );
