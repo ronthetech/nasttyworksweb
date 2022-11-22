@@ -2,7 +2,7 @@
 
 **Link:** [NasttyWorks.vercel.app](https://nasttyworks.vercel.app/)
 
-![NasttyWorks Auto](https://ronthetech.github.io/image-repo/nastty-works/1.png)
+![NasttyWorks Auto](https://ronthetech.github.io/image-repo/nastty-works/0.png)
 
 <br />
 
