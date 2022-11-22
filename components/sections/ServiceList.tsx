@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WrenchCircleIcon from "../../public/wrench-circle.svg";
 
 const services = [
   {
@@ -84,13 +85,15 @@ export default function ServiceList() {
   return (
     <div className="bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2
-            id="header-title"
-            className="text-5xl font-semibold text-teal-700"
-          >
-            Services
-          </h2>
+        <div className="text-center">
+          <div className="flex gap-8 mx-auto align-baseline bg-teal-600 rounded w-fit px-4 py-2">
+            <h2
+              id="header-title"
+              className="text-5xl font-semibold text-gray-900">
+              Services
+            </h2>
+            <WrenchCircleIcon className="text-6xl" />
+          </div>
           <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-teal-900 sm:text-5xl">
             A few of the services we offer
           </p>
@@ -105,20 +108,18 @@ export default function ServiceList() {
             and let us know what your problem is!
           </p>
         </div>
-
         <div className="mt-10">
           <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
             {services.map((service) => (
               <div
                 key={service.name}
-                className="relative bg-teal-100 shadow-md drop-shadow-md rounded-md p-2 border-teal-700 border-solid border"
-              >
+                className="relative bg-teal-100 shadow-md drop-shadow-md rounded-md p-2 border-teal-700 border-solid border">
                 <dt>
                   <p className="ml-8 text-xl font-medium leading-6 text-gray-900">
                     {service.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-8 text-lg text-gray-500">
+                <dd className="mt-2 ml-8 text-lg text-gray-700">
                   {service.description}
                 </dd>
               </div>
