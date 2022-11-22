@@ -12,7 +12,7 @@ const Footer = (props: FooterProps) => {
             <a>
               <h1
                 id="header-title"
-                className="text-3xl lg:text-4xl font-bold tracking-tight text-center text-emerald-700 hover:text-emerald-800">
+                className="text-2xl lg:text-3xl font-bold tracking-tight text-center text-emerald-700 hover:text-emerald-800">
                 Nastty Works Auto
               </h1>
             </a>
