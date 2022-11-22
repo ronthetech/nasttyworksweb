@@ -1,10 +1,8 @@
 # Nastty Works Auto
 
-**Link:** [NasttyWorks.vercel.app](https://nasttyworks.vercel.app/)
+**Link:** [https://NasttyWorks.vercel.app](https://nasttyworks.vercel.app/)
 
 ![NasttyWorks Auto](https://ronthetech.github.io/image-repo/nastty-works/0.png)
-
-<br />
 
 Business page for a mobile mechanic company. Features a service page, and a contact form to request an estimate or schedule an appointment. Clients can browse the services provided, and submit their information in the contact form to receive a callback and service estimate.
 
