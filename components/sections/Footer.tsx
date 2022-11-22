@@ -1,9 +1,7 @@
 import Link from "next/link";
 import InstagramLogo from "../../public/Instagram.svg";
 
-interface FooterProps {}
-
-const Footer = (props: FooterProps) => {
+const Footer = () => {
   return (
     <footer className="bg-gray-800 fixed bottom-0 w-full">
       <div className="mx-auto max-w-sm px-4 sm:px-6 lg:px-6">
