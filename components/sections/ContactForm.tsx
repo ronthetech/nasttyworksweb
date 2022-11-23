@@ -1,4 +1,12 @@
+import { useForm, ValidationError } from "@formspree/react";
+
 export default function ContactForm() {
+  const [state, handleSubmit] = useForm("xaykkrgz");
+  
+    if (state.succeeded) {
+    return <p className="text-center text-teal-900">Thanks for your submission!</p>;
+  }
+  
   return (
     <>
       <div className="hidden sm:block" aria-hidden="true">
@@ -21,7 +29,7 @@ export default function ContactForm() {
             </div>
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
-            <form action="#" method="POST">
+            <form method="POST" onSubmit={handleSubmit}>
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
@@ -60,20 +68,21 @@ export default function ContactForm() {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="email-address"
+                        htmlFor="email"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Email Address
                       </label>
                       <input
                         type="email"
-                        name="email-address"
-                        id="email-address"
+                        name="email"
+                        id="email"
                         autoComplete="email"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm"
                         placeholder="you@example.com"
                         defaultValue={""}
                       />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} />
                     </div>
 
                     <div className="col-span-6 sm:col-span-3 lg:col-span-2">
@@ -85,11 +94,12 @@ export default function ContactForm() {
                       </label>
                       <input
                         type="tel"
-                        name="phone-number"
-                        id="phone-number"
+                        name="telephone"
+                        id="telephone"
                         autoComplete="tel"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 sm:text-sm"
                       />
+                      <ValidationError prefix="Telephone" field="telephone" errors={state.errors} />
                     </div>
                     <div className="col-span-6">
                       <label
@@ -107,6 +117,7 @@ export default function ContactForm() {
                           required
                           minLength={5}
                         />
+                        <ValidationError prefix="Message" field="message" errors={state.errors} />
                       </div>
                       <p className="mt-2 sm:text-lg text-base text-gray-500">
                         Brief description of the issue your vehicle has, or the
@@ -118,10 +129,12 @@ export default function ContactForm() {
                 <div className="bg-gray-50 px-4 pb-14 text-right sm:px-6">
                   <button
                     type="submit"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-teal-600 py-2 px-4 text-lg font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                    className="inline-flex justify-center rounded-md border border-transparent bg-teal-600 py-2 px-4 text-lg font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2" disabled={state.submitting}
+                    
                   >
                     Send Message
                   </button>
+                  <ValidationError errors={state.errors} />
                 </div>
               </div>
             </form>
