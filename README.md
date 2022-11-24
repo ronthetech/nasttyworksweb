@@ -4,7 +4,7 @@
 
 ![NasttyWorks Auto](https://ronthetech.github.io/image-repo/nastty-works/0.png)
 
-Business page for a mobile mechanic company. Features a service page, and a contact form to request an estimate or schedule an appointment. Clients can browse the services provided, and submit their information in the contact form to receive a callback and service estimate.
+Landing page for a mobile mechanic company. Features a service page, and a contact form to request an estimate or schedule an appointment. Clients can browse the services provided, and submit their information in the contact form to receive a callback and service estimate.
 
 ## Check Us Out On Instagram!
 
